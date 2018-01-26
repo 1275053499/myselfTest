@@ -1,0 +1,98 @@
+//
+//  YJLheader.pch
+//  铺皇精简版
+//
+//  Created by selice on 2017/12/7.
+//  Copyright © 2017年 中国铺皇. All rights reserved.
+//
+
+#ifndef YJLheader_pch
+#define YJLheader_pch
+
+#import "GesbackController.h"//测试界面
+
+
+#import "FirstController.h"
+#import "SecondController.h"
+#import "ThirdController.h"
+#import "FourthController.h"
+
+#import "YJLBarButtonitem+Create.h"
+#import "SVProgressHUD.h"
+#import "YJLHUD.h"
+#import "YJLheader.pch"
+#import "MJRefresh.h"
+#import "SDImageCache.h"
+#import "UIImageView+WebCache.h"                        //网络图片缓存
+#import "SDWebImageManager.h"                           //网络图片缓存
+#import "UIImageView+WebCache.h"                        //网络图片缓存
+#import "Masonry.h"
+#import "AFNetworking.h"
+#import "YJLUserDefaults.h" //本地存数据
+#import "YJL_string.h"      //本地数据字段
+#import "LoginController.h" //登录
+#import "RegistrationController.h"//注册
+
+// 颜色自定义
+#define RGB(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+//  主体颜色
+#define MainRGB     [UIColor colorWithRed:67/255.0 green:172/255.0 blue:159/255.0 alpha:1.0]
+#define MainRGBA(a)  [UIColor colorWithRed:67/255.0 green:172/255.0 blue:159/255.0 alpha:a]
+
+//获取屏幕高度
+#define KMH [UIScreen mainScreen].bounds.size.height
+//获取屏幕宽度
+#define KMW [UIScreen mainScreen].bounds.size.width
+
+/**
+ *  获取随机RGB颜色
+ */
+#define random(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
+#define randomColor random(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+/**
+ *  判断当前设备是否是iOS以上
+ */
+#define iOS7   [[[UIDevice currentDevice]systemVersion] floatValue] >= 7.0
+#define iOS8   [[[UIDevice currentDevice]systemVersion] floatValue] >= 8.0
+#define iOS9   [[[UIDevice currentDevice]systemVersion] floatValue] >= 9.0
+#define iOS10  [[UIDevice currentDevice].systemVersion doubleValue] >= 10.0
+#define iOS11  [[UIDevice currentDevice].systemVersion doubleValue] >= 11.0
+
+/**
+ *  系统颜色
+ */
+#define aaa                           [UIColor blueColor]
+#define bbb                           [UIColor blackColor]
+#define ccc                           [UIColor brownColor]
+#define ddd                           [UIColor cyanColor]
+//#define darkGray                       [UIColor darkGrayColor]
+//#define darkText                       [UIColor darkTextColor]
+//#define green                          [UIColor greenColor]
+//#define gray                           [UIColor grayColor]
+//#define groupTableViewBackground       [UIColor groupTableViewBackgroundColor]
+//#define lightGray                      [UIColor lightGrayColor]
+//#define lightText                      [UIColor lightTextColor]
+//#define magenta                        [UIColor magentaColor]
+//#define orange                         [UIColor orangeColor]
+//#define purple                         [UIColor purpleColor]
+//#define red                            [UIColor redColor]
+//#define white                          [UIColor whiteColor]
+//#define yellow                         [UIColor yellowColor]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#endif /* YJLheader_pch */
